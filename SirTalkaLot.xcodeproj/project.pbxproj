@@ -14,6 +14,10 @@
 		B4CCFA1029C4838E00ED6DBA /* SirTalkaLotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA0F29C4838E00ED6DBA /* SirTalkaLotTests.swift */; };
 		B4CCFA1A29C4838E00ED6DBA /* SirTalkaLotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA1929C4838E00ED6DBA /* SirTalkaLotUITests.swift */; };
 		B4CCFA1C29C4838E00ED6DBA /* SirTalkaLotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA1B29C4838E00ED6DBA /* SirTalkaLotUITestsLaunchTests.swift */; };
+		B4CCFA2929C48A0300ED6DBA /* WhisperASR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA2829C48A0300ED6DBA /* WhisperASR.swift */; };
+		B4CCFA2B29C48A6000ED6DBA /* OpenAIAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA2A29C48A6000ED6DBA /* OpenAIAPI.swift */; };
+		B4CCFA2D29C48B6600ED6DBA /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA2C29C48B6600ED6DBA /* TextToSpeech.swift */; };
+		B4CCFA3129C4A56100ED6DBA /* PreviousConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CCFA3029C4A56100ED6DBA /* PreviousConversationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		B4CCFA1529C4838E00ED6DBA /* SirTalkaLotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SirTalkaLotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CCFA1929C4838E00ED6DBA /* SirTalkaLotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirTalkaLotUITests.swift; sourceTree = "<group>"; };
 		B4CCFA1B29C4838E00ED6DBA /* SirTalkaLotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirTalkaLotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4CCFA2829C48A0300ED6DBA /* WhisperASR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperASR.swift; sourceTree = "<group>"; };
+		B4CCFA2A29C48A6000ED6DBA /* OpenAIAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIAPI.swift; sourceTree = "<group>"; };
+		B4CCFA2C29C48B6600ED6DBA /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		B4CCFA3029C4A56100ED6DBA /* PreviousConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousConversationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 		B4CCF9F229C4838C00ED6DBA = {
 			isa = PBXGroup;
 			children = (
+				B4CCFA2C29C48B6600ED6DBA /* TextToSpeech.swift */,
+				B4CCFA2A29C48A6000ED6DBA /* OpenAIAPI.swift */,
 				B4CCF9FD29C4838C00ED6DBA /* SirTalkaLot */,
 				B4CCFA0E29C4838E00ED6DBA /* SirTalkaLotTests */,
 				B4CCFA1829C4838E00ED6DBA /* SirTalkaLotUITests */,
@@ -96,8 +106,10 @@
 			children = (
 				B4CCF9FE29C4838C00ED6DBA /* SirTalkaLotApp.swift */,
 				B4CCFA0029C4838C00ED6DBA /* ContentView.swift */,
+				B4CCFA3029C4A56100ED6DBA /* PreviousConversationsView.swift */,
 				B4CCFA0229C4838E00ED6DBA /* Assets.xcassets */,
 				B4CCFA0429C4838E00ED6DBA /* Preview Content */,
+				B4CCFA2829C48A0300ED6DBA /* WhisperASR.swift */,
 			);
 			path = SirTalkaLot;
 			sourceTree = "<group>";
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CCFA2B29C48A6000ED6DBA /* OpenAIAPI.swift in Sources */,
+				B4CCFA2D29C48B6600ED6DBA /* TextToSpeech.swift in Sources */,
+				B4CCFA3129C4A56100ED6DBA /* PreviousConversationsView.swift in Sources */,
 				B4CCFA0129C4838C00ED6DBA /* ContentView.swift in Sources */,
 				B4CCF9FF29C4838C00ED6DBA /* SirTalkaLotApp.swift in Sources */,
+				B4CCFA2929C48A0300ED6DBA /* WhisperASR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +436,9 @@
 				DEVELOPMENT_TEAM = CMYLNSG6AX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +468,9 @@
 				DEVELOPMENT_TEAM = CMYLNSG6AX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
